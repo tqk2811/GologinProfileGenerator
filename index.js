@@ -1,8 +1,8 @@
-const { default: GoLogin } = require("gologin");
+import { GoLogin } from 'gologin';
 
 const profile = new GoLogin({
-	token: process.argv[0],
-	profile_id: process.argv[1],
+	token: process.argv[2],
+	profile_id: process.argv[3],
  });
 
 async function Work(){
